@@ -1,0 +1,115 @@
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+input:focus, button:focus, textarea:focus, a:focus {outline: none}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+    font-family: 'Yeseva One', cursive;
+}
+p:last-child {
+    margin-bottom: 0
+}
+.body {
+    height: 100%;
+    font-family: 'Gentium Book Basic', serif;
+}
+
+
+.mainmanu  {
+    display: inline-block;
+    float: none;
+    background-color: transparent !important;
+    margin-left: 73px;
+    text-align: right;
+}
+.navbar{
+    padding-left: 20px;
+}
+.navbar-nav {
+
+}
+
+.nav-itm{
+    color: white;
+    display: inline-block;
+    float: none;
+    font-size: 20px;
+    position: relative;
+    top: 0;
+    width: 100%;
+    margin-left: 10px;
+    padding: 35px 15px;
+    font-family: 'Gentium Book Basic', serif;
+}
+
+.nav-itm.active {
+    color: white ;
+}
+.nav-itm:hover{
+    color: white;
+    text-decoration:none;
+}
+.nav-itm.active:before{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background: #dc3545;
+    height: 3px;
+}
+.nav-itm:after{
+
+}
+
+.logo{
+    background: url(images/logo.png);
+    z-index: 1;
+    text-align: left;
+    height: 93px;
+    width: 157px;
+    background-repeat: no-repeat
+}
+
+.top-area {
+    position: relative;
+}
+
+.top-area-background {
+    background: url("images/background.jpg");
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    BACKGROUND-SIZE: cover;
+    z-index: -1;
+}
+.header-text h2 {
+    background: url(images/below_background_designt.png);
+    font-family: 'Yeseva One', cursive;
+    color: white;
+    font-size: 70px;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    padding-bottom: 70px;
+}
+
