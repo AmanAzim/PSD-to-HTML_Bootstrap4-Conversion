@@ -86,11 +86,12 @@ p:last-child {
 
 .logo{
     background: url(images/logo.png);
-    z-index: 1;
     text-align: left;
     height: 93px;
     width: 157px;
-    background-repeat: no-repeat
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 9px;
 }
 
 .top-area {
