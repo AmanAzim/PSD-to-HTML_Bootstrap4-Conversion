@@ -76,8 +76,8 @@ p:last-child {
     position: absolute;
     top: -8px;
     width: 100%;
-    background: #dc3545;
     height: 3px;
+    background: #dc3545;
     left: -3px;
 }
 .nav-itm:after{
