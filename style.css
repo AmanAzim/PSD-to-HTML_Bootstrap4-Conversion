@@ -39,8 +39,10 @@ p:last-child {
     display: inline-block;
     float: none;
     background-color: transparent !important;
-    margin-left: 73px;
+    /* margin-left: 73px; */
     text-align: right;
+    position: relative;
+    left: 75px;
 }
 .navbar{
     padding-left: 20px;
@@ -69,12 +71,14 @@ p:last-child {
     color: white;
     text-decoration:none;
 }
-.nav-itm.active:before{
+.nav-itm.active::before{
+    content: ''; /*This is must for sudo element*/
     position: absolute;
-    top: 0;
+    top: -8px;
     width: 100%;
     background: #dc3545;
     height: 3px;
+    left: -3px;
 }
 .nav-itm:after{
 
@@ -92,7 +96,6 @@ p:last-child {
 .top-area {
     position: relative;
 }
-
 .top-area-background {
     background: url("images/background.jpg");
     position: absolute;
@@ -101,7 +104,6 @@ p:last-child {
     width: 100%;
     height: 100%;
     BACKGROUND-SIZE: cover;
-    z-index: -1;
 }
 .header-text h2 {
     background: url(images/below_background_designt.png);
