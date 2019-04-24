@@ -268,6 +268,8 @@ p:last-child {
     background: url("images/ingredients-bg.jpg");
 }
 
+
+
 .ingredients-text {
     z-index: 1;
     position: relative;
@@ -284,9 +286,14 @@ p:last-child {
     height: 100%;
     background: black;
     opacity: .67;
-
 }
-.white-section-title{
+.section-title.white-section-title{
     color: white;
-    text-align: center;
+    background: url("images/ingredient_section_below_title_line.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+.ingredient-3-img {
+    padding-top: 56px;
 }
