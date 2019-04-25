@@ -255,7 +255,7 @@ p:last-child {
 .ingredients-area{
     position: relative;
 }
-.paralax-bg {
+.paralax-bg { /*we are going to use this class for all the background's default properties*/
     position: absolute;
     left: 0px;
     top:0px;
@@ -278,7 +278,7 @@ p:last-child {
     color: white;
     padding: 80px
 }
-.ingredients-text:before{
+.ingredients-text:before, .testimonial-list:before {
     content: '';
     position: absolute;
     z-index: -1;
@@ -338,5 +338,41 @@ p:last-child {
     padding: 0px 9px;
     font-size: 14px;
 }
+/*******************************************************/
 
 
+/***************Testimonial area*******************/
+.testimonial-area {
+    position: relative;
+}
+.testimonial-bg {
+    background: url("images/testimonial-bg.jpg");
+}
+/*for we defined the same properties for the testimonial-list's light black background with the   class properties we used for ingredient-text:before. see above*/
+.testimonial-list {
+    color: white;
+    position: relative;
+    z-index: 1;
+    padding: 76px 74px;
+}
+
+.single-testimonial-item p{
+    font-size: 25px;
+    font-family: 'Gentium Book Basic', serif;
+    color: #9A9D9A;
+}
+p.testimonial-author {
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    margin-top: 50px;
+    color: white;
+}
+#testimonial-carousel:before {
+    font-family: "FontAwesome";
+    content: "\f10d";
+    position: absolute;
+    top: -31px;
+    left: -25px;
+    color: #9A9D9A;
+    font-size: 34px;
+}
