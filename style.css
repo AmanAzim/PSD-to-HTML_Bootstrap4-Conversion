@@ -320,8 +320,23 @@ p:last-child {
 .single-food-menu h2 span {
     float: right;
 }
-.single-food-menu .special {
-
+.single-food-menu p{
+    margin: 0px;
+}
+.single-food-menu.special {
+    border: 1px solid #E6D8AE;
+    padding: 10px;
+    position: relative;
+}
+.single-food-menu.special:before {
+    content: 'Special';
+    color: white;
+    background-color: #DABF75;
+    position: absolute;
+    top: -21px;
+    left: 288px;
+    padding: 0px 9px;
+    font-size: 14px;
 }
 
 
