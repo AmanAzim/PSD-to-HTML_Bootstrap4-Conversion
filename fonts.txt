@@ -1,0 +1,18 @@
+01. Gentium Book Basic Bold
+02. Yeseva One
+03. Lato Regular (400)
+04. Open Sans
+05. OpenSans Bold
+
+<link href="https://fonts.googleapis.com/css?family=Gentium+Book+Basic:700|Lato|Open+Sans:400,700|Yeseva+One" rel="stylesheet">
+
+
+
+    font-family: 'Gentium Book Basic', serif;  //body
+
+    font-family: 'Yeseva One', cursive; //Heading
+
+    font-family: 'Lato', sans-serif; //Body
+
+    font-family: 'Open Sans', sans-serif;
+
