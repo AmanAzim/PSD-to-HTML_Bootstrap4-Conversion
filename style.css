@@ -217,7 +217,7 @@ p:last-child {
 
 
 /*********About section**********/
-.about-area {
+.about-area, .contact-area {
     background: url(images/about_background.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -374,4 +374,22 @@ p.testimonial-author {
     left: -25px;
     color: #9A9D9A;
     font-size: 34px;
+}
+/******************************************************************/
+
+/*****************Contact Area*************************************/
+.contact-form {
+    text-align: left;
+}
+.contact-form label {
+    color: #CC9900;
+}
+.contact-form input[type="text"], input[type="email"], input[type="date"], select{ /*to select multiple input type elements*/
+    width: 100%;
+    border: 1px solid #C8C6C6;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+.contact-form input[type="text"]:hover, input[type="email"]:hover, input[type="date"]:hover, select:hover {
+    border: 1px solid #CC9900;
 }
