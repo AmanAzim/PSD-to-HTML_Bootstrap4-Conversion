@@ -380,9 +380,13 @@ p.testimonial-author {
 /*****************Contact Area*************************************/
 .contact-form {
     text-align: left;
+    margin-top: 9px;
 }
 .contact-form label {
     color: #CC9900;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
 }
 .contact-form input[type="text"], input[type="email"], input[type="date"], select{ /*to select multiple input type elements*/
     width: 100%;
@@ -392,4 +396,53 @@ p.testimonial-author {
 }
 .contact-form input[type="text"]:hover, input[type="email"]:hover, input[type="date"]:hover, select:hover {
     border: 1px solid #CC9900;
+}
+.contact-form button {
+    background-color: #CC9900;
+    color: white;
+    float: inherit;
+    border: none;
+    padding: 5px 54px;
+    margin: auto;
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+}
+/******************************************************************/
+
+
+/************************Footer area*******************************/
+.footer-area {
+    background: black;
+    color: #E8E8E8;
+}
+.footer-area h2 {
+    color: white;
+    font-size: 21px;
+}
+.footer-area p {
+    font-family: 'Open Sans', sans-serif;
+
+}
+.footer-area b {
+    color: white;
+}
+
+.footer-payment-cards {
+    color: white;
+    margin-top: 49px;
+}
+.footer-payment-cards i{
+    margin-left: 8px;
+}
+
+.footer-social-icons {
+    color: white;
+    margin-top: 49px;
+    font-size: 17px;
+}
+.footer-social-icons a{
+    color: white;
+    margin-left: 8px;
 }
