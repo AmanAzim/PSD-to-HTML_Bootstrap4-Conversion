@@ -53,20 +53,7 @@ p:last-child {
     height: 100%;
     BACKGROUND-SIZE: cover;
 }
-.logo{
-    /*background: url(images/logo.png);*/
-    text-align: left;
-    height: 93px;
-    width: 157px;
-    position: absolute;
-    background-repeat: no-repeat;
-    top: 9px;
-}
-.is-sticky .logo {
-    height: 50px;
-    width: auto;
-    padding: 16px 35px;
-}
+
 
 /*********************************************/
 
@@ -76,9 +63,9 @@ p:last-child {
 .header-area {
     width: 100%;
     z-index: 999;
-    position: relative;
+    position: relative; /*relative*/
 }
-.is-sticky .header-area:before { /*When a element will have ".is-sticky" as parent class and ".header-area" as own class then this style will be applied. Notice the space between the name of two classes*/
+.is-sticky .header-area:after { /*When a element will have ".is-sticky" as parent class and ".header-area" as own class then this style will be applied. Notice the space between the name of two classes*/
     content: "";
     background: black;
     opacity: 0.8;
@@ -87,7 +74,26 @@ p:last-child {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1;
+    z-index: -1;/*z-index: -1;*/
+}
+.is-sticky .header-area{ /*this isa must to make the sticky header work and clickable*/
+    position: fixed !important;
+    z-index: 999 !important;
+}
+
+.logo img{
+    /*background: url(images/logo.png);*/
+    text-align: left;
+    height: 93px;
+    width: 157px;
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 9px;
+}
+.is-sticky .logo img{
+    height: 50px;
+    width: auto;
+    padding: 0px 45px;
 }
 
 .mainmanu  {
@@ -112,7 +118,7 @@ p:last-child {
 }
 
 .nav-item.nav-link.my-nav-itm{
-    color: white;
+    color: whitesmoke;
     display: inline-block;
     float: none;
     font-size: 20px;
@@ -139,7 +145,10 @@ p:last-child {
     background: white;
     left: -3px;
 }
-
+.is-sticky .nav-item.nav-link.my-nav-itm {
+    padding: 15px 24px;
+    font-size: 16px;
+}
 
 
 .custom-navbar-toggler button{
@@ -172,6 +181,11 @@ p:last-child {
     color: #db9e10;
     padding: 0px 5px;
     display: inline-block;
+}
+
+
+.header-area:before, .nav-item.nav-link.my-nav-itm, .logo img {
+    transition: 0.4s;
 }
 /***************************************/
 
