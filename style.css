@@ -67,6 +67,9 @@ p:last-child {
 
 
 /*Main manu and NavBar and Social media Icons*/
+.header-area {
+    width: 100%;
+}
 .mainmanu  {
     display: inline-block;
     float: none;
