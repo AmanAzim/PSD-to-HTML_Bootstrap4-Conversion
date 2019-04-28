@@ -37,6 +37,7 @@ p:last-child {
 .body {
     height: 100%;
     font-family: 'Gentium Book Basic', serif;
+    position: relative;
 }
 
 
