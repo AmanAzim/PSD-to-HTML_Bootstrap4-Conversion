@@ -45,15 +45,7 @@ p:last-child {
 .top-area {
     position: relative;
 }
-.top-area-background {
-    background: url("images/background.jpg");
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    BACKGROUND-SIZE: cover;
-}
+
 
 
 /*********************************************/
@@ -63,8 +55,12 @@ p:last-child {
 /*Main manu and NavBar and Social media Icons*/
 .header-area {
     width: 100%;
+}
+.sticky-wrapper {
+    position: absolute;
+    top:0;
+    width: 100%;
     z-index: 999;
-    position: relative; /*relative*/
 }
 .is-sticky .header-area:after { /*When a element will have ".is-sticky" as parent class and ".header-area" as own class then this style will be applied. Notice the space between the name of two classes*/
     content: "";
@@ -197,6 +193,33 @@ p:last-child {
 
 
 /*******Header Text Area*********/
+.header-text-area {
+    position: relative;
+    padding-top: 80px;
+}
+.header-text-area-background {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+.slide-bg-1 {
+    background-image: url("images/background.jpg");
+}
+.slide-bg-2 {
+    background-image: url("images/background2.jpg");
+}
+.slide-control{
+    font-size: 71px;
+    opacity: 0.2 !important;
+}
+.slide-control:hover{
+    color: white;
+    opacity: 0.5 !important;
+}
+
 .header-text {
     padding: 100px 0px;
 }
