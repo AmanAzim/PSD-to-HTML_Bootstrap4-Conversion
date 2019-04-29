@@ -142,6 +142,9 @@ p:last-child {
     background: white;
     left: -3px;
 }
+
+
+
 .is-sticky .nav-item.nav-link.my-nav-itm {
     padding: 15px 24px;
     font-size: 16px;
@@ -512,3 +515,8 @@ p.testimonial-author {
     color: white;
     margin-left: 8px;
 }
+
+
+/******************Responsive*********************/
+/*Medium device: 1200px*/
+

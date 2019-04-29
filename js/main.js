@@ -1,4 +1,5 @@
 $(document).ready(function(){
+
     $(".header-area").sticky({topSpacing:0});
 
     $(".smooth-menu").on('click', function(event) {
@@ -30,8 +31,6 @@ $(document).ready(function(){
         offset: 10
     });
 
-    //to activate parallex effect //but making problem and without it the parallex effect is working
-    //$('.paralax-bg').scrolly({bgParallax: true});
 });
 
 
