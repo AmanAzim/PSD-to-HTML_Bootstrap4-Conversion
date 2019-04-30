@@ -35,6 +35,10 @@ $(document).ready(function(){
         $(".mainmanu").addClass("mobile-menu-activated");
     })
 
+    $(".navbar-nav a").click(()=>{
+        $(".navbar-collapse").removeClass("show");
+    })
+
 });
 
 

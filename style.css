@@ -540,6 +540,9 @@ p.testimonial-author {
     .mainmanu {
         left: -91px;
     }
+    .is-sticky .header-area:after {
+        padding: 42px;
+    }
     .is-sticky .custom-navbar-toggler button {
         width: 52px;
         height: 39px;
@@ -574,6 +577,12 @@ p.testimonial-author {
         position: absolute;
         left: 8pc;
     }
+    .is-sticky .custom-navbar-toggler button {
+        width: 64px;
+        height: 41px;
+        padding: 12px 12px;
+        top: -12px;
+    }
     .mobile-menu-activated .show .navbar-toggle-control {
         text-align: center;
         position: absolute;
@@ -589,9 +598,12 @@ p.testimonial-author {
         right: -213px;
         position: relative;
     }
+    .is-sticky .social-links {
+        top: 28px;
+    }
 
     .is-sticky .header-area:after {
-        display: none;
+        padding: 42px;
     }
     .header-text h2 {
         font-size: 29px;
@@ -624,7 +636,7 @@ p.testimonial-author {
         top: 21px;
     }
     .is-sticky .header-area:after {
-        display: none;
+        padding: 42px;
     }
     .header-text h2 {
         font-size: 55px;
@@ -648,6 +660,12 @@ p.testimonial-author {
         position: absolute;
         left: 8pc;
     }
+    .is-sticky .custom-navbar-toggler button {
+        width: 64px;
+        height: 41px;
+        padding: 12px 12px;
+        top: -12px;
+    }
     .mobile-menu-activated .show .navbar-toggle-control {
         text-align: center;
         position: absolute;
@@ -662,6 +680,9 @@ p.testimonial-author {
         top: 43px;
         right: -213px;
         position: relative;
+    }
+    .is-sticky .social-links {
+        top: 28px;
     }
 }
 
