@@ -677,9 +677,9 @@ p.testimonial-author {
         left: 0px;
     }
     .social-links {
-        top: 43px;
-        right: -213px;
+        top: 2px;
         position: relative;
+        right: 10px;
     }
     .is-sticky .social-links {
         top: 28px;
