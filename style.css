@@ -108,12 +108,6 @@ p:last-child {
     padding-left: 20px;
 }
 
-@media screen and (max-width: 767px) {
-    .navbar-nav {
-        float: left !important;
-    }
-}
-
 .nav-item.nav-link.my-nav-itm{
     color: whitesmoke;
     display: inline-block;
@@ -159,23 +153,29 @@ p:last-child {
     color: orange;
 }
 
-
+.custom-navbar-toggler{
+    position: absolute;
+    top: 37px;
+    left: 192px;
+}
 .custom-navbar-toggler button{
     background-color: rgba(86, 91, 78, 0.8);
     opacity: 0.8;
     border-radius: .25rem;
     width: 73px;
     height: 49px;
-    margin-left: 140px;
-    margin-top: 30px;
-    padding: 12px 12px
-
+    /*margin-left: 140px;
+    margin-top: 30px;*/
+    padding: 12px 12px;
+    float: none;
+    margin: 0;
+    border: 1px solid white;
 }
 .line{
     width: 100%;
     float: left;
     height: 2px;
-    background-color: #fff;
+    background: #fff !important;
     margin-bottom: 5px;
 
 }
@@ -528,11 +528,59 @@ p.testimonial-author {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+    .logo img {
+        height: 79px;
+        width: 136px;
+        top: 16px;
+        left: 34px;
+    }
+    .is-sticky .logo img {
+        top: 21px;
+    }
+    .header-text h2 {
+        font-size: 29px;
+    }
+    .section-title {
+        font-size: 24px;
+    }
+    .single-food-menu h2 {
+        font-size: 15px;
+    }
 
+    .section-title.white-section-title {
+        font-size: 20px;
+    }
+    .single-testimonial-item p {
+        font-size: 17px;
+    }
+    .contact-text .section-title {
+        margin-top: 30px;
+    }
+
+    .footer-widget {
+        margin-bottom: 34px;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) and (max-width: 768px) {
+    .is-sticky .logo img {
+        top: 21px;
+    }
+
+    .header-text h2 {
+        font-size: 55px;
+    }
+    .dish-photo {
+        margin-top: 30px;
+    }
+    .contact-text .section-title {
+        margin-top: 30px;
+    }
+
+    .footer-widget {
+        margin-bottom: 34px;
+    }
 
 }
 
@@ -572,7 +620,13 @@ p.testimonial-author {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) and (max-width: 1200px){
-
+    .is-sticky .mainmanu {
+        left: 0px;
+    }
+    .is-sticky .nav-item.nav-link.my-nav-itm {
+        padding: 15px 18px;
+        font-size: 16px;
+    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
