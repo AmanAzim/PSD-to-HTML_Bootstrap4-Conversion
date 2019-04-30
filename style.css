@@ -73,6 +73,7 @@ p:last-child {
     height: 100%;
     z-index: -1;/*z-index: -1;*/
 }
+
 .is-sticky .header-area{ /*this isa must to make the sticky header work and clickable*/
     position: fixed !important;
     z-index: 999 !important;
@@ -151,6 +152,14 @@ p:last-child {
 }
 .is-sticky .nav-item.nav-link.my-nav-itm.active {
     color: orange;
+}
+.mobile-menu-activated .show .navbar-toggle-control {
+    float: left;
+}
+.mobile-menu-activated .show .navbar-toggle-control a {
+    background: black;
+    padding: 10px;
+    border-bottom: 1px solid #333;
 }
 
 .custom-navbar-toggler{
@@ -526,16 +535,63 @@ p.testimonial-author {
 /******************Responsive*********************/
 /*Medium device: 1200px*/
 
-/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 498px) {
+    .mainmanu {
+        left: -91px;
+    }
+    .is-sticky .custom-navbar-toggler button {
+        width: 52px;
+        height: 39px;
+        padding: 12px 12px;
+        float: inherit;
+        position: absolute;
+        left: 8pc;
+        top: -7px;
+    }
+    .social-links{
+        top: 33px;
+    }
+    .is-sticky .social-links{
+        top:33px
+    }
+}
+    /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .logo img {
-        height: 79px;
-        width: 136px;
+        height: 71px;
+        width: 122px;
         top: 16px;
-        left: 34px;
     }
     .is-sticky .logo img {
         top: 21px;
+    }
+    .custom-navbar-toggler button {
+        width: 68px;
+        height: 44px;
+        padding: 12px 12px;
+        float: right;
+        position: absolute;
+        left: 8pc;
+    }
+    .mobile-menu-activated .show .navbar-toggle-control {
+        text-align: center;
+        position: absolute;
+        top: 111px;
+        left: 233px;
+    }
+    .nav-item.nav-link.my-nav-itm.active::before {
+        top: -3px;
+        left: 0px;
+    }
+    .social-links {
+        top: 43px;
+        right: -213px;
+        position: relative;
+    }
+
+    .is-sticky .header-area:after {
+        display: none;
     }
     .header-text h2 {
         font-size: 29px;
@@ -567,7 +623,9 @@ p.testimonial-author {
     .is-sticky .logo img {
         top: 21px;
     }
-
+    .is-sticky .header-area:after {
+        display: none;
+    }
     .header-text h2 {
         font-size: 55px;
     }
@@ -582,6 +640,29 @@ p.testimonial-author {
         margin-bottom: 34px;
     }
 
+    .custom-navbar-toggler button {
+        width: 68px;
+        height: 44px;
+        padding: 12px 12px;
+        float: right;
+        position: absolute;
+        left: 8pc;
+    }
+    .mobile-menu-activated .show .navbar-toggle-control {
+        text-align: center;
+        position: absolute;
+        top: 111px;
+        left: 233px;
+    }
+    .nav-item.nav-link.my-nav-itm.active::before {
+        top: -3px;
+        left: 0px;
+    }
+    .social-links {
+        top: 43px;
+        right: -213px;
+        position: relative;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
