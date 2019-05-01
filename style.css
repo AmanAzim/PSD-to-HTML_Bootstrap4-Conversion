@@ -633,10 +633,10 @@ p.testimonial-author {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) and (max-width: 768px) {
     .is-sticky .logo img {
-        top: 21px;
+        top: 11px;
     }
     .is-sticky .header-area:after {
-        padding: 42px;
+        padding: 37px;
     }
     .header-text h2 {
         font-size: 55px;
@@ -661,10 +661,10 @@ p.testimonial-author {
         left: 8pc;
     }
     .is-sticky .custom-navbar-toggler button {
-        width: 64px;
-        height: 41px;
+        width: 61px;
+        height: 39px;
         padding: 12px 12px;
-        top: -12px;
+        top: -20px;
     }
     .mobile-menu-activated .show .navbar-toggle-control {
         text-align: center;
@@ -673,16 +673,21 @@ p.testimonial-author {
         left: 233px;
     }
     .nav-item.nav-link.my-nav-itm.active::before {
-        top: -3px;
+        top: -7px;
+        left: 0px;
+    }
+    .is-sticky .nav-item.nav-link.my-nav-itm.active::before {
+        top: -10px;
         left: 0px;
     }
     .social-links {
-        top: 2px;
+        top: 39px;
         position: relative;
-        right: 10px;
+        right: -189px;
     }
     .is-sticky .social-links {
-        top: 28px;
+        top: 3px;
+        right: -12px;
     }
 }
 
@@ -693,9 +698,10 @@ p.testimonial-author {
     }
     .is-sticky .logo img{
         padding: 0px;
+        top: 11px;
     }
-    .mainmanu{
-        left: 12px;
+    .mainmanu {
+        left: 1px;
     }
     .is-sticky .mainmanu {
         float: right;
@@ -705,14 +711,15 @@ p.testimonial-author {
         font-size: 60px;
     }
     .nav-item.nav-link.my-nav-itm {
-        font-size: 17px;
+        font-size: 16px;
         margin-left: 7px;
-        padding: 37px 5px;
+        padding: 40px 5px;
     }
     .is-sticky .nav-item.nav-link.my-nav-itm {
         padding: 15px 12px;
         font-size: 16px;
         margin-left: 1px;
+        top: 3px;
     }
     .social-links a {
         padding: 0px 4px;
