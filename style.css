@@ -66,6 +66,7 @@ p:last-child {
     content: "";
     background: black;
     opacity: 0.8;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
     position: absolute;
     top: 0;
     left: 0;
@@ -128,7 +129,7 @@ p:last-child {
 .nav-item.nav-link.my-nav-itm.active {
     color: white ;
 }
-.nav-item.nav-link.my-nav-itm.active::before{
+.nav-item.nav-link.my-nav-itm.active:before{
     content: ''; /*This is must for sudo element*/
     position: absolute;
     top: -8px;
@@ -170,6 +171,7 @@ p:last-child {
 .custom-navbar-toggler button{
     background-color: rgba(86, 91, 78, 0.8);
     opacity: 0.8;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
     border-radius: .25rem;
     width: 73px;
     height: 49px;
@@ -203,6 +205,7 @@ p:last-child {
 
 
 .header-area:before, .nav-item.nav-link.my-nav-itm, .logo img {
+    -webkit-transition: 0.4s;
     transition: 0.4s;
 }
 /***************************************/
@@ -232,10 +235,12 @@ p:last-child {
 .slide-control{
     font-size: 71px;
     opacity: 0.2 !important;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
 }
 .slide-control:hover{
     color: white;
     opacity: 0.5 !important;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
 }
 
 .header-text {
@@ -272,6 +277,7 @@ p:last-child {
     width: 100%;
     height: 100%;
     opacity: 0.8;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
 }
 
 .btn-filled.btn-seeMenu {
@@ -293,6 +299,7 @@ p:last-child {
     width: 100%;
     height: 100%;
     opacity: 0.7;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
 }
 /***************************************/
 
@@ -371,6 +378,7 @@ p:last-child {
     height: 100%;
     background: black;
     opacity: .67;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=67)";
 }
 .section-title.white-section-title{
     color: white;
@@ -533,10 +541,10 @@ p.testimonial-author {
 
 
 /******************Responsive*********************/
-/*Medium device: 1200px*/
-
+/*Super small devices*/
 
 @media only screen and (max-width: 498px) {
+
     .mainmanu {
         left: -91px;
     }
@@ -561,6 +569,10 @@ p.testimonial-author {
         left: 8pc;
         top: -11px !important;
     }
+    .single-food-menu.special:before {
+        top: -21px;
+        left: -1px !important;
+    }
     .social-links{
         top: 36px !important;
     }
@@ -568,7 +580,7 @@ p.testimonial-author {
         top:28px !important;
     }
 }
-    /* Extra small devices (phones, 600px and down) */
+/* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     p {font-size: 14px;}
     h2 {font-size: 6px;}
@@ -586,6 +598,18 @@ p.testimonial-author {
     }
     .single-testimonial-item p {
         font-size: 17px;
+    }
+
+    .ingredients-text {
+        padding: 15px 9px;
+    }
+    #testimonial-carousel:before {
+        top: -16px;
+        left: -12px;
+        font-size: 15px;
+    }
+    .testimonial-list {
+        padding: 15px 18px;
     }
     p.testimonial-author {
         font-size: 14px;
@@ -619,7 +643,7 @@ p.testimonial-author {
         top: 111px;
         left: 233px;
     }
-    .nav-item.nav-link.my-nav-itm.active::before {
+    .nav-item.nav-link.my-nav-itm.active:before {
         top: -3px;
         left: 0px;
     }
@@ -636,7 +660,7 @@ p.testimonial-author {
         padding: 42px;
     }
 
-    .single-food-menu.special::before {
+    .single-food-menu.special:before {
         top: -21px;
         left: -1px !important;
     }
@@ -689,7 +713,7 @@ p.testimonial-author {
         margin-top: 30px;
     }
 
-    .single-food-menu.special::before {
+    .single-food-menu.special:before {
         top: -21px;
         left: 353px !important;
     }
@@ -728,11 +752,11 @@ p.testimonial-author {
     .is-sticky .nav-item.nav-link.my-nav-itm {
         top: -37px;
     }
-    .nav-item.nav-link.my-nav-itm.active::before {
+    .nav-item.nav-link.my-nav-itm.active:before {
         top: -3px;
         left: 0px;
     }
-    .is-sticky .nav-item.nav-link.my-nav-itm.active::before {
+    .is-sticky .nav-item.nav-link.my-nav-itm.active:before {
         top: -3px;
         left: 0px;
     }
@@ -774,7 +798,7 @@ p.testimonial-author {
     p.testimonial-author {
         font-size: 14px;
     }
-    .single-food-menu.special::before {
+    .single-food-menu.special:before {
         top: -21px;
         left: 0px;
     }
@@ -806,7 +830,7 @@ p.testimonial-author {
         margin-left: 1px;
         top: 3px;
     }
-    .is-sticky .nav-item.nav-link.my-nav-itm.active::before {
+    .is-sticky .nav-item.nav-link.my-nav-itm.active:before {
         top:-10px;
     }
     .social-links a {
@@ -817,7 +841,7 @@ p.testimonial-author {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) and (max-width: 1200px){
-    .single-food-menu.special::before {
+    .single-food-menu.special:before {
         top: -21px;
         left: 0px;
     }

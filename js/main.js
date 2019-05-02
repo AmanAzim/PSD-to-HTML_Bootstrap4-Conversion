@@ -31,6 +31,8 @@ $(document).ready(function(){
         offset: 10
     });
 
+
+
     $(".custom-navbar-toggler").click(()=>{
         $(".mainmanu").addClass("mobile-menu-activated");
     })
